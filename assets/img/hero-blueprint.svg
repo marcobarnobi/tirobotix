@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 640" role="img" aria-labelledby="t">
+<title id="t">Technical illustration of a humanoid robot with its joints, motors and safety systems labelled</title>
+<defs>
+    <pattern id="g1" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16,0 H0 V16" fill="none" stroke="#FFFFFF" stroke-opacity=".045"/>
+    </pattern>
+    <pattern id="g2" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80,0 H0 V80" fill="none" stroke="#FFFFFF" stroke-opacity=".08"/>
+    </pattern>
+    <radialGradient id="fade" cx=".5" cy=".45" r=".6">
+      <stop offset="0" stop-color="#fff"/><stop offset=".75" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <mask id="m"><rect width="560" height="640" fill="url(#fade)"/></mask>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF7A1A" stop-opacity="0"/><stop offset="1" stop-color="#FF7A1A" stop-opacity=".22"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-200%" width="200%" height="500%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .scan { animation: scan 6s cubic-bezier(.45,0,.55,1) infinite; }
+      .visor { animation: pulse 3s ease-in-out infinite; }
+      @keyframes scan { 0% { transform: translateY(0); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(500px); opacity: 0; } }
+      @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .55; } }
+      @media (prefers-reduced-motion: reduce) { .scan, .visor { animation: none; } .scan { opacity: 0; } }
+    </style>
+</defs>
+
+<g mask="url(#m)"><rect width="560" height="640" fill="url(#g1)"/><rect width="560" height="640" fill="url(#g2)"/></g>
+<path d="M280,24 V610" stroke="#5B7088" stroke-width=".8" stroke-dasharray="6 4 1 4" opacity=".7"/>
+<g transform="translate(280,58) scale(1.22)">
+  
+  <g transform="translate(-52,80) rotate(8)">
+    <rect x="-7" y="8" width="14" height="58" rx="7" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+    <rect x="-6" y="80" width="12" height="54" rx="6" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+    <rect x="-8" y="137" width="16" height="22" rx="7" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+    <circle cx="0" cy="72" r="9" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="0" cy="72" r="3.1" fill="#FF7A1A"/>
+  </g>
+  <circle cx="-52" cy="80" r="12" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="-52" cy="80" r="4.2" fill="#FF7A1A"/>
+  <g transform="translate(52,80) rotate(-8)">
+    <rect x="-7" y="8" width="14" height="58" rx="7" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+    <rect x="-6" y="80" width="12" height="54" rx="6" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+    <rect x="-8" y="137" width="16" height="22" rx="7" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+    <circle cx="0" cy="72" r="9" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="0" cy="72" r="3.1" fill="#FF7A1A"/>
+  </g>
+  <circle cx="52" cy="80" r="12" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="52" cy="80" r="4.2" fill="#FF7A1A"/>
+  
+  <rect x="-25" y="210" width="16" height="72" rx="8" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <rect x="-24" y="300" width="14" height="74" rx="7" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <rect x="-36" y="386" width="30" height="12" rx="5" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <circle cx="-17" cy="290" r="10" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="-17" cy="290" r="3.5" fill="#FF7A1A"/><circle cx="-17" cy="380" r="6" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="-17" cy="380" r="2.1" fill="#FF7A1A"/><circle cx="-17" cy="200" r="11" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="-17" cy="200" r="3.8" fill="#FF7A1A"/>
+  <rect x="9" y="210" width="16" height="72" rx="8" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <rect x="10" y="300" width="14" height="74" rx="7" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <rect x="6" y="386" width="30" height="12" rx="5" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <circle cx="17" cy="290" r="10" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="17" cy="290" r="3.5" fill="#FF7A1A"/><circle cx="17" cy="380" r="6" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="17" cy="380" r="2.1" fill="#FF7A1A"/><circle cx="17" cy="200" r="11" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.6"/><circle cx="17" cy="200" r="3.8" fill="#FF7A1A"/>
+  <rect x="-28" y="168" width="56" height="26" rx="9" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <rect x="-20" y="156" width="40" height="14" rx="4" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <path d="M-44,70 Q0,60 44,70 L34,158 Q0,166 -34,158 Z" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <path d="M-30,136 Q0,142 30,136" fill="none" stroke="#8FA6BF" stroke-width=".8" opacity=".6"/>
+  <rect x="-16" y="86" width="32" height="26" rx="5" fill="#0A0F14" stroke="#FF7A1A" stroke-width="1.2"/>
+  <path d="M-9,99 h4 l3,-6 l4,12 l3,-6 h4" fill="none" stroke="#FF7A1A" stroke-width="1.4" stroke-linejoin="round"/>
+  <circle cx="0" cy="124" r="4" fill="#2EE59D"/>
+  <rect x="-7" y="52" width="14" height="14" rx="3" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <rect x="-24" y="0" width="48" height="52" rx="16" fill="#0F1924" stroke="#8FA6BF" stroke-width="1.1"/>
+  <rect x="-17" y="18" width="34" height="13" rx="6.5" fill="#05080C" stroke="#8FA6BF" stroke-width=".8"/>
+  <rect class="visor" x="-13" y="22.5" width="26" height="4" rx="2" fill="#7BE7FF" filter="url(#glow)"/>
+</g>
+<rect class="scan" x="170" y="28" width="220" height="30" fill="url(#scan)"/>
+<g font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace">
+  <g class="callout">
+    <polyline points="300.7,88.5 378.0,72 392,72" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="300.7" cy="88.5" r="3" fill="#FF7A1A"/>
+    <circle cx="300.7" cy="88.5" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="400" y="69" text-anchor="start" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">01 </tspan>VISION + COMPUTE</text>
+    <text x="400" y="83" text-anchor="start" font-size="8.5" fill="#6F849B" letter-spacing=".8">STEREO DEPTH · AI</text>
+  </g>
+  <g class="callout">
+    <polyline points="216.6,155.6 182.0,140 168,140" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="216.6" cy="155.6" r="3" fill="#FF7A1A"/>
+    <circle cx="216.6" cy="155.6" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="160" y="137" text-anchor="end" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">02 </tspan>SHOULDER ACTUATOR</text>
+    <text x="160" y="151" text-anchor="end" font-size="8.5" fill="#6F849B" letter-spacing=".8">3 DOF · BACKDRIVABLE</text>
+  </g>
+  <g class="callout">
+    <polyline points="299.5,178.8 378.0,176 392,176" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="299.5" cy="178.8" r="3" fill="#FF7A1A"/>
+    <circle cx="299.5" cy="178.8" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="400" y="173" text-anchor="start" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">03 </tspan>SAFETY CONTROLLER</text>
+    <text x="400" y="187" text-anchor="start" font-size="8.5" fill="#6F849B" letter-spacing=".8">E-STOP · TORQUE LIMIT</text>
+  </g>
+  <g class="callout">
+    <polyline points="204.4,242.2 182.0,238 168,238" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="204.4" cy="242.2" r="3" fill="#FF7A1A"/>
+    <circle cx="204.4" cy="242.2" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="160" y="235" text-anchor="end" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">04 </tspan>ELBOW JOINT</text>
+    <text x="160" y="249" text-anchor="end" font-size="8.5" fill="#6F849B" letter-spacing=".8">CYCLOIDAL REDUCER</text>
+  </g>
+  <g class="callout">
+    <polyline points="300.7,302.0 378.0,296 392,296" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="300.7" cy="302.0" r="3" fill="#FF7A1A"/>
+    <circle cx="300.7" cy="302.0" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="400" y="293" text-anchor="start" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">05 </tspan>HIP JOINT</text>
+    <text x="400" y="307" text-anchor="start" font-size="8.5" fill="#6F849B" letter-spacing=".8">3 DOF · ABS. ENCODER</text>
+  </g>
+  <g class="callout">
+    <polyline points="259.3,411.8 182.0,400 168,400" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="259.3" cy="411.8" r="3" fill="#FF7A1A"/>
+    <circle cx="259.3" cy="411.8" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="160" y="397" text-anchor="end" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">06 </tspan>KNEE ACTUATOR</text>
+    <text x="160" y="411" text-anchor="end" font-size="8.5" fill="#6F849B" letter-spacing=".8">HIGH-TORQUE MODULE</text>
+  </g>
+  <g class="callout">
+    <polyline points="300.7,411.8 378.0,420 392,420" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="300.7" cy="411.8" r="3" fill="#FF7A1A"/>
+    <circle cx="300.7" cy="411.8" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="400" y="417" text-anchor="start" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">07 </tspan>BLDC MOTOR</text>
+    <text x="400" y="431" text-anchor="start" font-size="8.5" fill="#6F849B" letter-spacing=".8">FOC DRIVER · CAN-BUS</text>
+  </g>
+  <g class="callout">
+    <polyline points="259.3,536.2 182.0,532 168,532" fill="none" stroke="#5B7088" stroke-width="1"/>
+    <circle cx="259.3" cy="536.2" r="3" fill="#FF7A1A"/>
+    <circle cx="259.3" cy="536.2" r="7" fill="none" stroke="#FF7A1A" stroke-opacity=".45"/>
+    <text x="160" y="529" text-anchor="end" font-size="10.5" fill="#E6EDF3" letter-spacing=".9"><tspan fill="#FF7A1A">08 </tspan>FOOT SENSORS</text>
+    <text x="160" y="543" text-anchor="end" font-size="8.5" fill="#6F849B" letter-spacing=".8">FORCE / TORQUE</text>
+  </g>
+  <text x="20" y="22" font-size="9" fill="#6F849B" letter-spacing="1.2">FIG. 01 — HUMANOID REFERENCE ARCHITECTURE</text>
+  <g transform="translate(340,600)">
+    <rect width="200" height="28" fill="none" stroke="#5B7088" stroke-width=".8"/>
+    <path d="M148,0 V28" stroke="#5B7088" stroke-width=".8"/>
+    <text x="10" y="18" font-size="9" fill="#AFC0D2" letter-spacing="1.2">TIROBOTIX · HUMANOID</text>
+    <text x="158" y="18" font-size="9" fill="#FF7A1A" letter-spacing="1.2">REV A</text>
+  </g>
+</g>
+</svg>
