@@ -30,7 +30,7 @@
     if (e.key === 'Escape') setNav(false);
   });
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 900) setNav(false);
+    if (window.innerWidth > 1020) setNav(false);
   });
 
   // Reveal-on-scroll and active nav link
