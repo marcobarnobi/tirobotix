@@ -432,44 +432,6 @@ a { color: inherit; text-decoration: none; }
 .pillar h3 { margin-bottom: 10px; }
 .pillar p { color: var(--text-2); }
 
-.founder {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 28px;
-  margin-top: 24px;
-  padding: 32px 36px;
-  border-radius: var(--radius-lg);
-  background:
-    radial-gradient(500px 240px at 100% 0%, rgba(255, 122, 26, .14), transparent 70%),
-    var(--ink);
-  color: var(--inv);
-}
-.founder-avatar {
-  display: grid;
-  place-items: center;
-  width: 84px;
-  height: 84px;
-  border-radius: 50%;
-  font-family: var(--font-head);
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--accent);
-  background: rgba(255, 122, 26, .1);
-  border: 1px solid rgba(255, 122, 26, .35);
-}
-.founder-label {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 6px;
-}
-.founder h3 { font-size: 1.6rem; margin-bottom: 8px; }
-.founder-text > p:last-child { color: var(--inv-2); max-width: 680px; }
-.founder .text-link { color: var(--accent); margin: 0; padding: 0; }
-
 /* Environments */
 .env-grid {
   display: grid;
@@ -1025,8 +987,6 @@ a.contact-card:hover { border-color: rgba(255, 122, 26, .6); }
   .contact-inner { gap: 48px; }
   .pillars { grid-template-columns: 1fr; margin-top: 48px; gap: 16px; }
   .pillar-num { margin-bottom: 20px; }
-  .founder { grid-template-columns: auto 1fr; }
-  .founder .text-link { grid-column: 2; }
   .env-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
@@ -1060,9 +1020,6 @@ a.contact-card:hover { border-color: rgba(255, 122, 26, .6); }
     gap: 12px;
     padding: 26px 0;
   }
-  .founder { grid-template-columns: 1fr; gap: 16px; padding: 26px 22px; }
-  .founder .text-link { grid-column: auto; }
-  .founder-avatar { width: 64px; height: 64px; font-size: 22px; }
   .contact-card-value { font-size: 1.1rem; }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
 }
